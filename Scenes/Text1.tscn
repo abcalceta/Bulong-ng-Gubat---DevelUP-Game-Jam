@@ -47,6 +47,7 @@ script = ExtResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
+frame = 2
 playing = true
 centered = false
 
@@ -55,16 +56,15 @@ autoplay = "start"
 anims/start = SubResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-modulate = Color( 1, 1, 1, 0.218301 )
+modulate = Color( 1, 1, 1, 0.654902 )
 margin_right = 493.0
 margin_bottom = 276.0
-color = Color( 0, 0, 0, 1 )
+color = Color( 0, 0, 0, 0.588235 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Textbox" parent="." instance=ExtResource( 1 )]
-modulate = Color( 1, 1, 1, 0 )
 margin_bottom = 0.0
 [connection signal="done" from="Textbox" to="." method="_on_Textbox_done"]
 

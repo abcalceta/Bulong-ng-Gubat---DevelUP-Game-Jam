@@ -5,7 +5,7 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 const GRAVITY = 9.8*2
-const JUMP_STRENGTH = -9.8*35
+const JUMP_STRENGTH = -9.8*38
 const SPEED = 9.8 * 15
 var motionVector = Vector2.ZERO
 var canJump = true
@@ -53,3 +53,5 @@ func _input(event):
 func _on_Timer_timeout():
 	$Sprite.frame = ($Sprite.frame + 4) % 12
 	pass # Replace with function body.
+
+

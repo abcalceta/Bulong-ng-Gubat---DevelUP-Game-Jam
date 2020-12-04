@@ -16,6 +16,13 @@ func _ready():
 #	pass
 
 
-func _on_Textbox_done():
-	get_tree().change_scene("res://Scenes/Level1.tscn")
+func _on_Area2D_body_entered(body):
+	if body.is_in_group("player"):
+		get_tree().change_scene("res://Scenes/Level4.tscn")
+	pass # Replace with function body.
+
+
+func _on_DEATH_body_entered(body):
+	if body.is_in_group("player"):
+		get_tree().reload_current_scene()
 	pass # Replace with function body.

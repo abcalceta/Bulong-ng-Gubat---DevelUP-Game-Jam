@@ -26,8 +26,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Devel Up Jam 2020 1"
-run/main_scene="res://Scenes/World.tscn"
+config/name="DevelUP Jam 2020 1"
+run/main_scene="res://Scenes/Text1.tscn"
 config/icon="res://icon.png"
 
 [display]
