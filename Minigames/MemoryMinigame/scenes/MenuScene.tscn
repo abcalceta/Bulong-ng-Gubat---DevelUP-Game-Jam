@@ -1,0 +1,171 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://scripts/MenuScene.gd" type="Script" id=1]
+[ext_resource path="res://sprites/BackgroundBlue.png" type="Texture" id=2]
+[ext_resource path="res://fonts/Symtext.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scripts/ColorElement.gd" type="Script" id=4]
+[ext_resource path="res://sprites/BackgroundGray.png" type="Texture" id=5]
+[ext_resource path="res://sprites/BackgroundRed.png" type="Texture" id=6]
+[ext_resource path="res://sprites/BackgroundPink.png" type="Texture" id=7]
+[ext_resource path="res://sprites/BackgroundOrange.png" type="Texture" id=8]
+[ext_resource path="res://sprites/BackgroundDarkGreen.png" type="Texture" id=9]
+[ext_resource path="res://sprites/BackgroundBlack.png" type="Texture" id=10]
+[ext_resource path="res://sprites/BackgroundPurple.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 180
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 27
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 27
+font_data = ExtResource( 3 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 12.5764, 12.6009 )
+
+[node name="MenuScene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Background" type="Sprite" parent="."]
+scale = Vector2( 60, 33.75 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="GameName" type="RichTextLabel" parent="."]
+margin_left = 199.0
+margin_top = 43.0
+margin_right = 1723.0
+margin_bottom = 280.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "Memory Game"
+scroll_active = false
+
+[node name="QuitButton" type="Button" parent="."]
+margin_left = 698.0
+margin_top = 584.0
+margin_right = 818.0
+margin_bottom = 630.0
+rect_scale = Vector2( 5, 5 )
+custom_fonts/font = SubResource( 2 )
+text = "Quit"
+
+[node name="StartButton" type="Button" parent="."]
+margin_left = 698.0
+margin_top = 334.0
+margin_right = 818.0
+margin_bottom = 380.0
+rect_scale = Vector2( 5, 5 )
+custom_fonts/font = SubResource( 2 )
+text = "Start"
+
+[node name="Credits" type="RichTextLabel" parent="."]
+margin_left = 788.0
+margin_top = 922.0
+margin_right = 1224.0
+margin_bottom = 1062.0
+custom_fonts/normal_font = SubResource( 3 )
+text = "Programming: Tzoop Icons: Game-icons.net Font: Symtext"
+scroll_active = false
+
+[node name="ClickColors" type="RichTextLabel" parent="."]
+margin_left = 210.0
+margin_top = 600.0
+margin_right = 560.0
+margin_bottom = 760.0
+custom_fonts/normal_font = SubResource( 3 )
+text = "click color blocks to change the background color"
+scroll_active = false
+
+[node name="GrayElement" type="Area2D" parent="."]
+position = Vector2( 240, 460 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrayElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="GrayElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+
+[node name="RedElement" type="Area2D" parent="."]
+position = Vector2( 240, 540 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="RedElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="PinkElement" type="Area2D" parent="."]
+position = Vector2( 320, 540 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PinkElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="PinkElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="BlueElement" type="Area2D" parent="."]
+position = Vector2( 400, 540 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="BlueElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="OrangeElement" type="Area2D" parent="."]
+position = Vector2( 480, 540 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OrangeElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="OrangeElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+
+[node name="DarkGreenElement" type="Area2D" parent="."]
+position = Vector2( 400, 460 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DarkGreenElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="DarkGreenElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="BlacKElement" type="Area2D" parent="."]
+position = Vector2( 320, 460 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlacKElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="BlacKElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+
+[node name="PurpleElement" type="Area2D" parent="."]
+position = Vector2( 480, 460 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PurpleElement"]
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="PurpleElement"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+[connection signal="button_down" from="QuitButton" to="." method="_on_QuitButton_button_down"]
+[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
