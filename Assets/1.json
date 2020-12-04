@@ -1,0 +1,98 @@
+{
+  "passages": [
+    {
+      "text": "((Gez))High school. The breeding ground of delinquents.\n[[1]]",
+      "links": [
+        {
+          "name": "1",
+          "link": "1",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "404",
+        "y": "171.5"
+      }
+    },
+    {
+      "text": "((Gez))I can clearly remember those bullies... Every day, they would surround this helpless girl. Every day, they pick on her.\n[[2]]",
+      "links": [
+        {
+          "name": "2",
+          "link": "2",
+          "pid": "3"
+        }
+      ],
+      "name": "1",
+      "pid": "2",
+      "position": {
+        "x": "404",
+        "y": "321.5"
+      }
+    },
+    {
+      "text": "((Gez))They won't pick on her enough for any adults to step in, of course, but they'll pick on her enough to cause day-to-day suffering.\n[[3]]",
+      "links": [
+        {
+          "name": "3",
+          "link": "3",
+          "pid": "4"
+        }
+      ],
+      "name": "2",
+      "pid": "3",
+      "position": {
+        "x": "404",
+        "y": "471.5"
+      }
+    },
+    {
+      "text": "((Gez))When it happened, it was like any other day.\nThey picked on the girl as usual.\nI closed my eyes, and turned away, and as always, pretended not to care. \n[[4]]\n",
+      "links": [
+        {
+          "name": "4",
+          "link": "4",
+          "pid": "5"
+        }
+      ],
+      "name": "3",
+      "pid": "4",
+      "position": {
+        "x": "404",
+        "y": "622.5"
+      }
+    },
+    {
+      "text": "((Gez))On that day, the girl disappeared. [[5]]",
+      "links": [
+        {
+          "name": "5",
+          "link": "5",
+          "pid": "6"
+        }
+      ],
+      "name": "4",
+      "pid": "5",
+      "position": {
+        "x": "404",
+        "y": "772.5"
+      }
+    },
+    {
+      "text": "((Gez))And many other student disappearances followed. ",
+      "name": "5",
+      "pid": "6",
+      "position": {
+        "x": "404",
+        "y": "922.5"
+      }
+    }
+  ],
+  "name": "Bulong ng Gubat_Game Jam",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.5",
+  "ifid": "79735D0E-9DEC-41D0-BFDE-E4539F669F6F"
+}

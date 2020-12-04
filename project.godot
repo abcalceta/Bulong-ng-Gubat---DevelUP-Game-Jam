@@ -8,9 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "Passage",
+"language": "GDScript",
+"path": "res://Scripts/Passage.gd"
+}, {
+"base": "Node",
+"class": "PassageLink",
+"language": "GDScript",
+"path": "res://Scripts/PassageLink.gd"
+} ]
 _global_script_class_icons={
-
+"Passage": "",
+"PassageLink": ""
 }
 
 [application]

@@ -1,0 +1,92 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Theme.tres" type="Theme" id=1]
+[ext_resource path="res://Assets/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/Dialogue.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/JSONParser.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 29
+font_data = ExtResource( 2 )
+
+[node name="Textbox" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+margin_bottom = -1.0
+theme = ExtResource( 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+margin_left = 11.2373
+margin_top = 50.1933
+margin_right = 249.237
+margin_bottom = 76.1933
+custom_fonts/font = SubResource( 1 )
+text = "CHARACTER NAME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+margin_left = 36.2576
+margin_top = 82.0
+margin_right = 473.258
+margin_bottom = 269.0
+text = "The quick brown snake slithered over the lazy game developers."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="Button" parent="."]
+margin_left = 170.573
+margin_top = 225.61
+margin_right = 473.573
+margin_bottom = 261.61
+focus_mode = 0
+enabled_focus_mode = 0
+text = "CONTINUE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+margin_left = -4.00792
+margin_top = 78.0531
+margin_right = 138.992
+margin_bottom = 194.053
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_right = 143.0
+margin_bottom = 36.0
+focus_mode = 0
+enabled_focus_mode = 0
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+margin_top = 40.0
+margin_right = 143.0
+margin_bottom = 76.0
+focus_mode = 0
+enabled_focus_mode = 0
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+margin_top = 80.0
+margin_right = 143.0
+margin_bottom = 116.0
+focus_mode = 0
+enabled_focus_mode = 0
+
+[node name="JSONParser" type="Node" parent="."]
+script = ExtResource( 5 )
+file_name = "Assets/1.json"
+[connection signal="pressed" from="Continue" to="." method="_on_Continue_pressed"]

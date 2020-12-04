@@ -1,0 +1,194 @@
+{
+  "passages": [
+    {
+      "text": "((Gez)) I wake up in a dark forest. A cold wind blows. [[8]]",
+      "links": [
+        {
+          "name": "8",
+          "link": "8",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage 1",
+      "pid": "1",
+      "position": {
+        "x": "709",
+        "y": "170.5"
+      }
+    },
+    {
+      "text": "((VOICE)) Welcome to my beloved forest.\n[[9]]",
+      "links": [
+        {
+          "name": "9",
+          "link": "9",
+          "pid": "3"
+        }
+      ],
+      "name": "8",
+      "pid": "2",
+      "position": {
+        "x": "709",
+        "y": "320.5"
+      }
+    },
+    {
+      "text": "((Gez)) W-What was that? [[10]]",
+      "links": [
+        {
+          "name": "10",
+          "link": "10",
+          "pid": "4"
+        }
+      ],
+      "name": "9",
+      "pid": "3",
+      "position": {
+        "x": "860",
+        "y": "366.5"
+      }
+    },
+    {
+      "text": "((VOICE)) Do you hear the forest's weeping? [[11]]",
+      "links": [
+        {
+          "name": "11",
+          "link": "11",
+          "pid": "5"
+        }
+      ],
+      "name": "10",
+      "pid": "4",
+      "position": {
+        "x": "941",
+        "y": "508.5"
+      }
+    },
+    {
+      "text": "((Gez)) Who are you? Why did you bring me here?[[12]]",
+      "links": [
+        {
+          "name": "12",
+          "link": "12",
+          "pid": "6"
+        }
+      ],
+      "name": "11",
+      "pid": "5",
+      "position": {
+        "x": "942",
+        "y": "658.5"
+      }
+    },
+    {
+      "text": "((VOICE)) Ah, simple human. Don't you remember what you did wrong? [[13]]",
+      "links": [
+        {
+          "name": "13",
+          "link": "13",
+          "pid": "7"
+        }
+      ],
+      "name": "12",
+      "pid": "6",
+      "position": {
+        "x": "944",
+        "y": "809.5"
+      }
+    },
+    {
+      "text": "((Gez)) What do you mean? Wait! The disappearances! [[14]]",
+      "links": [
+        {
+          "name": "14",
+          "link": "14",
+          "pid": "8"
+        }
+      ],
+      "name": "13",
+      "pid": "7",
+      "position": {
+        "x": "944",
+        "y": "959.5"
+      }
+    },
+    {
+      "text": "((Gez)) You were the one who took them, weren't you? [[15]]",
+      "links": [
+        {
+          "name": "15",
+          "link": "15",
+          "pid": "9"
+        }
+      ],
+      "name": "14",
+      "pid": "8",
+      "position": {
+        "x": "944",
+        "y": "1109.5"
+      }
+    },
+    {
+      "text": "((VOICE)) Do you want to save the others? Let's play a game... [[16]]",
+      "links": [
+        {
+          "name": "16",
+          "link": "16",
+          "pid": "10"
+        }
+      ],
+      "name": "15",
+      "pid": "9",
+      "position": {
+        "x": "944",
+        "y": "1259.5"
+      }
+    },
+    {
+      "text": "((VOICE)) I’ll give you a chance to save them before I end all of you. HAHAHAHA! [[17]]",
+      "links": [
+        {
+          "name": "17",
+          "link": "17",
+          "pid": "11"
+        }
+      ],
+      "name": "16",
+      "pid": "10",
+      "position": {
+        "x": "944",
+        "y": "1409.5"
+      }
+    },
+    {
+      "text": "((Gez)) The voice is gone...I guess I should explore the forest. [[18]]",
+      "links": [
+        {
+          "name": "18",
+          "link": "18",
+          "pid": "12"
+        }
+      ],
+      "name": "17",
+      "pid": "11",
+      "position": {
+        "x": "944",
+        "y": "1560.5"
+      }
+    },
+    {
+      "text": "((Gez)) ...",
+      "name": "18",
+      "pid": "12",
+      "position": {
+        "x": "944",
+        "y": "1710.5"
+      }
+    }
+  ],
+  "name": "Bulong ng Gubat_Game Jam",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.5",
+  "ifid": "79735D0E-9DEC-41D0-BFDE-E4539F669F6F"
+}
