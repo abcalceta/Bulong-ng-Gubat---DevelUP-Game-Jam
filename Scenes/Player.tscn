@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/F_03.png" type="Texture" id=2]
 [ext_resource path="res://Assets/light.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Jump6.wav" type="AudioStream" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idleBounce"
@@ -72,4 +73,7 @@ texture = ExtResource( 3 )
 texture_scale = 1.89
 color = Color( 0.454902, 0.843137, 0.552941, 1 )
 energy = 0.82
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Hit_Hurt.wav-24e6e436d62fa439242aa294dd66ed21.sample"
+
+[deps]
+
+source_file="res://Minigames/Hit_Hurt.wav"
+dest_files=[ "res://.import/Hit_Hurt.wav-24e6e436d62fa439242aa294dd66ed21.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

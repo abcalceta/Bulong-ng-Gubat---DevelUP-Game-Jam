@@ -39,6 +39,7 @@ func _process(delta):
 func _input(event):
 	if Input.is_action_just_pressed("jump") and canJump:
 		motionVector.y = JUMP_STRENGTH
+		$jump.play()
 		canJump = false
 	if Input.is_action_just_released("left") or Input.is_action_just_released("right"):
 		motionVector.x = 0

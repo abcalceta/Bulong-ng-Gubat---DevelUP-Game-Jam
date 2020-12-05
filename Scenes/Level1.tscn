@@ -5,10 +5,10 @@
 [ext_resource path="res://Assets/DesertForest.png" type="Texture" id=3]
 [ext_resource path="res://Assets/light.png" type="Texture" id=4]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 40.9204, 10 )
-
 [sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 67.8595, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 25.9943, 47.9441 )
 
 [sub_resource type="Animation" id=3]
@@ -38,13 +38,13 @@ texture = ExtResource( 3 )
 [node name="DEATH" type="Area2D" parent="." index="1"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DEATH" index="0"]
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="." index="2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
 position = Vector2( 467.223, 208.184 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="Player" parent="." index="3"]
 position = Vector2( 58.6252, 120.069 )
