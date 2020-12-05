@@ -7,7 +7,7 @@
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" parent="DEATH" index="0"]
-position = Vector2( 209.9, 263.217 )
+position = Vector2( 209.9, 268.829 )
 
 [node name="Player" parent="." index="3"]
 position = Vector2( 10.1677, 247.663 )
