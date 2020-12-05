@@ -6,10 +6,10 @@
 [ext_resource path="res://Assets/light.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 67.8595, 10 )
+extents = Vector2( 159.239, 8.69638 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 25.9943, 47.9441 )
+extents = Vector2( 35.8715, 69.0021 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "Fadein"
