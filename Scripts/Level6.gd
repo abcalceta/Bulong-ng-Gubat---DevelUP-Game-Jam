@@ -12,6 +12,7 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D2_body_entered(body):
 	if body.is_in_group("player"):
+		Globals.currLevel = 6
 		get_tree().change_scene("res://Minigames/scenes/GameManager.tscn")
 	pass # Replace with function body.
 

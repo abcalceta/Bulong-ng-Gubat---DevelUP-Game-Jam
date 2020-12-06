@@ -1,20 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Textbox.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/1_2.png" type="Texture" id=2]
-[ext_resource path="res://Assets/1_1.png" type="Texture" id=3]
-[ext_resource path="res://Assets/1_0.png" type="Texture" id=4]
-[ext_resource path="res://Scripts/Text1.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Text2.gd" type="Script" id=2]
+[ext_resource path="res://Assets/forest.png" type="Texture" id=3]
 
-[sub_resource type="SpriteFrames" id=1]
-animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "default",
-"speed": 15.0
-} ]
-
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "start"
 length = 0.5
 tracks/0/type = "value"
@@ -42,30 +32,31 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.654902 ) ]
 }
 
-[node name="Text1" type="Node2D"]
-script = ExtResource( 5 )
+[node name="Text2" type="Node2D"]
+script = ExtResource( 2 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 1 )
-frame = 1
-playing = true
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 3 )
 centered = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "start"
-anims/start = SubResource( 2 )
+anims/start = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0.654902 )
 margin_right = 493.0
 margin_bottom = 276.0
-color = Color( 0, 0, 0, 0.588235 )
+color = Color( 0, 0, 0, 0.737255 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Textbox" parent="." instance=ExtResource( 1 )]
 margin_bottom = 0.0
+
+[node name="JSONParser" parent="Textbox" index="4"]
+file_name = "Assets/2.json"
 [connection signal="done" from="Textbox" to="." method="_on_Textbox_done"]
 
 [editable path="Textbox"]

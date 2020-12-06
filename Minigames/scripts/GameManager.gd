@@ -75,7 +75,10 @@ func _process(delta):
 	if !init:
 		_shuffle_cards()
 	if number_of_matches >=12:
-		get_tree().change_scene("res://Scenes/Level7.tscn")
+		if Globals.currLevel == 9:
+			get_tree().change_scene("res://Scenes/Final.tscn")			
+		else:
+			get_tree().change_scene("res://Scenes/Level"+str(Globals.currLevel)+"a.tscn")
 
 func _shuffle_cards():
 	all_remaining_cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]

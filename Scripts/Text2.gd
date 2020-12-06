@@ -17,5 +17,5 @@ func _ready():
 
 
 func _on_Textbox_done():
-	get_tree().change_scene("res://Scenes/Level3.tscn")
+	get_tree().change_scene("res://Scenes/MainMenu.tscn")
 	pass # Replace with function body.

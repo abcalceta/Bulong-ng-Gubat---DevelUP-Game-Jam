@@ -21,4 +21,7 @@ tile_data = PoolIntArray( -65538, 2, 0, -2, 2, 0, 65534, 2, 0, 131070, 2, 0, 655
 [node name="Light2D" parent="." index="5"]
 visible = false
 position = Vector2( 249.215, 7.10239 )
+
+[node name="ColorRect" parent="." index="9"]
+visible = false
 [connection signal="body_entered" from="DEATH" to="." method="_on_DEATH_body_entered"]
